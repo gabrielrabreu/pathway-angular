@@ -1,0 +1,22 @@
+<div class="horizontal-chart">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-12">
+              <h4 class="title-chart">Actual Month</h4>
+              <div class="line-chart">
+                  <ngx-charts-bar-vertical
+                      [legend]="legend"
+                      [showXAxisLabel]="showXAxisLabel"
+                      [showYAxisLabel]="showYAxisLabel"
+                      [xAxisLabel]="xAxisLabel"
+                      [yAxisLabel]="yAxisLabel"
+                      [xAxis]="showXAxis"
+                      [yAxis]="showYAxis"
+                      [scheme]="colorScheme"
+                      [results]="data">
+                  </ngx-charts-bar-vertical>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+https://openbase.com/categories/js/most-popular-angular-chart-libraries
+
+NGX-CHARTS = Compatível com a versão, diversas opções de gráficos, bem documentado, bons comentários sobre
+NGX-ECHARTS = Compatível com a versão, parece ter menos opções de gráficos que o ngx-charts, bons comentários sobre, bem menos downloads que ngx-charts
+NG2-CHARTS = CHART.JS para AngularJS, não consegui utilizar, problema com versão do Angular, comentários ruins sobre
+NG-APEXCHARTS = Pago
+ANGULAR-HIGHCHARTS = Pago
+FUSION-CHARTS = Pago
+ANGULAR-GOOGLE-CHARTS = Não achei compatibiildade com versão
+
+Acho que fica entre NGX-CHARTS e NGX-ECHARTS.
+https://www.npmtrends.com/@swimlane/ngx-charts-vs-ngx-echarts

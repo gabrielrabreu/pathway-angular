@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+
+<div>
+    <button class="btn btn-info" (click)="displayNgxCharts()">NGX Charts</button>
+    <button class="btn btn-info" (click)="displayNgxECharts()">NGX ECharts</button>
+    <button class="btn btn-info" (click)="displayHighCharts()">HighCharts</button>
+</div>
+
+<div class="charts" *ngIf="isDisplayingNgxCharts">
+    <app-example-01></app-example-01>
+    <hr/>
+    <app-example-02></app-example-02>
+</div>
+
+<div class="charts" *ngIf="isDisplayingNgxECharts">
+    <app-example-03></app-example-03>
+</div>
+
+<div class="charts" *ngIf="isDisplayingHighCharts">
+    <app-example-04></app-example-04>
+</div>
