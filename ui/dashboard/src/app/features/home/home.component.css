@@ -1,0 +1,51 @@
+/* ROW BOX INFO */
+
+.box-info-container {
+    padding: 25px 0;
+}
+
+.box-info-container .box-info {
+    float: left;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: 180px;
+    border: 1px solid #c7c4c4;;
+    background-color: #f1f2f7;
+}
+
+.box-info-container .box-info .title {
+    display: block;
+    font-size: 15px;
+    width: auto;
+}
+
+.box-info-container .box-info .content {
+    font-size: 20px;
+}
+
+.box-info-container .box-info .content i {
+    margin-right: 10px;
+}
+
+.box-info-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ROW chartS */
+
+.chart-container {
+    display: flex;
+    width: 1200px;
+}
+
+.chart-box {
+    flex: 1;
+    border: 1px solid #c7c4c4;
+    background-color: #f1f2f7;
+    margin: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+}

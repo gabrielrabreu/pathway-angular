@@ -1,0 +1,46 @@
+<div class="chart-card">
+    <div class="chart-header">
+        <h6 class="chart-header-title">{{ chartTitle }}</h6>
+        <button type="button" class="btn chart-header-settings-button" (click)="toggleSettings()">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+        </button>
+
+        <div class="chart-header-settings" *ngIf="showSettings" (outsideClick)="showSettings = false">
+            <table class="table-bordered">
+                <caption hidden="true">Settings</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Settings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Category:</td>
+                        <td>
+                            <select class="form-select" [(ngModel)]="selectedCategory" (change)="categoryChanged()">
+                                <option>All</option>
+                                <option *ngFor="let value of dashboard"
+                                    [value]="value.name"
+                                >{{ value.name }}</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="chart-body">
+        <ngx-charts-area-chart-stacked
+            [view]="view"
+            [scheme]="colorScheme"
+            [legend]="legend"
+            [xAxis]="xAxis"
+            [yAxis]="yAxis"
+            [timeline]="timeline"
+            [results]="chartData">
+        </ngx-charts-area-chart-stacked>
+    </div>
+</div>

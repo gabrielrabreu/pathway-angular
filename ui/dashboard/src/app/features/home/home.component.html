@@ -1,0 +1,49 @@
+<h1>Dashboard</h1>
+
+<div class="dashboard">
+    <div class="box-info-container">
+        <fieldset class="box-info">
+            <legend class="title">Visits</legend>
+            <p class="content"><i class="fa-solid fa-eye" aria-hidden="true"></i>5,267</p>
+        </fieldset>
+
+        <fieldset class="box-info">
+            <legend class="title">Sales</legend>
+            <p class="content"><i class="fa-solid fa-money-bill" aria-hidden="true"></i>7,826</p>
+        </fieldset>
+
+        <fieldset class="box-info">
+            <legend class="title">Denied</legend>
+            <p class="content"><i class="fa-solid fa-xmark" aria-hidden="true"></i>467</p>
+        </fieldset>
+
+        <fieldset class="box-info">
+            <legend class="title">Pending</legend>
+            <p class="content"><i class="fa-solid fa-spinner" aria-hidden="true"></i>3</p>
+        </fieldset>
+
+        <fieldset class="box-info">
+            <legend class="title">Canceled</legend>
+            <p class="content"><i class="fa-solid fa-ban" aria-hidden="true"></i>2,223</p>
+        </fieldset>
+
+        <fieldset class="box-info">
+            <legend class="title">Clients</legend>
+            <p class="content"><i class="fa-solid fa-user-group" aria-hidden="true"></i>3,287</p>
+        </fieldset>
+    </div>
+
+    <div class="chart-container">
+        <div class="chart-box">
+            <app-dashboard-ngx-charts-advanced-pie
+                [chartTitle]="'NGX Charts Advanced Pie'"
+            ></app-dashboard-ngx-charts-advanced-pie>
+        </div>
+        
+        <div class="chart-box">
+            <app-dashboard-ngx-charts-stacked-area-chart
+                [chartTitle]="'NGX Charts Stacked Area'"
+            ></app-dashboard-ngx-charts-stacked-area-chart>
+        </div>
+    </div>
+</div>

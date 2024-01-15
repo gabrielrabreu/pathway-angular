@@ -1,0 +1,32 @@
+.chart-header {
+    text-align: center;
+}
+
+.chart-header .chart-header-title {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.chart-header .chart-header-title:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.chart-header .chart-header-settings-button {
+    cursor: pointer;
+}
+
+.chart-header .chart-header-settings {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #c7c4c4;
+    background-color: #f1f2f7;
+    display: inline;
+}
+
+.chart-body {
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+}
