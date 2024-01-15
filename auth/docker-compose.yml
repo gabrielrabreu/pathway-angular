@@ -1,0 +1,28 @@
+version: '3'
+services:
+  yoda-mssql:
+    build:
+      context: ./containers/mssql
+    ports:
+      - "1401:1433"
+    environment:
+      SA_PASSWORD: '\#8%5gRrUk+}u%?'
+      ACCEPT_EULA: "Y"
+    container_name: yoda-mssql
+    volumes:
+      - yoda-mssql-backup:/var/opt/mssql
+  yoda-backend:
+    build:
+      context: .
+      dockerfile: ./containers/api-auth/Dockerfile
+    ports:
+      - "8001:80"
+    container_name: yoda-backend
+  yoda-frontend:
+    build:
+      context: ./containers/frontend-auth/
+    ports:
+      - "9001:80"
+    container_name: yoda-frontend
+volumes:
+  yoda-mssql-backup:

@@ -1,0 +1,29 @@
+{
+    "navbar": {
+        "home": "Página de Inicio",
+        "vehicles": "Vehiculos"
+    },
+    "home": {
+        "title": "Página de Inicio"
+    },
+    "vehicle-list": {
+        "title": "Administrar",
+        "title-bold": "Vehiculos",
+        "add": "Agregar Vehiculo",
+        "plate": "Placa"
+    },
+    "add-vehicle": {
+        "title": "Agregar Vehiculo",
+        "plate-placeholder": "Placa (obligatorio)"
+    },
+    "remove-vehicle": {
+        "title": "Eliminar Vehiculo"
+    },
+    "update-vehicle": {
+        "title": "Actualizar Vehiculo",
+        "plate-placeholder": "Placa (obligatorio)"
+    },
+    "view-vehicle": {
+        "title": "Ver Vehiculo"
+    }
+}

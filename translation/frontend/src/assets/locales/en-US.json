@@ -1,0 +1,29 @@
+{
+    "navbar": {
+        "home": "Home",
+        "vehicles": "Vehicles"
+    },
+    "home": {
+        "title": "Home"
+    },
+    "vehicle-list": {
+        "title": "Manage",
+        "title-bold": "Vehicles",
+        "add": "Add Vehicle",
+        "plate": "Plate"
+    },
+    "add-vehicle": {
+        "title": "Add Vehicle",
+        "plate-placeholder": "Plate (required)"
+    },
+    "remove-vehicle": {
+        "title": "Remove Vehicle"
+    },
+    "update-vehicle": {
+        "title": "Update Vehicle",
+        "plate-placeholder": "Plate (required)"
+    },
+    "view-vehicle": {
+        "title": "View Vehicle"
+    }
+}
