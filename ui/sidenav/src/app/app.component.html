@@ -1,0 +1,13 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened="true" class="mat-elevation-z8">
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
+    <app-header [sidenav]="sidenav"></app-header>
+    <div class="main-content">
+      <div style="padding: 20px">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

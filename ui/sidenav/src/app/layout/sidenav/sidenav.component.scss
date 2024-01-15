@@ -1,0 +1,31 @@
+.sidenav-container {
+  min-width: 60px;
+  height: calc(100vh - 200px);
+}
+
+.sidenav-container {
+
+  .mat-divider {
+    background-color: #646161;
+  }
+
+  .mat-list-item {
+    color: #c4c0c0;
+    font-size: 15px;
+  }
+
+  .rotate-icon {
+    position: absolute;
+    transform: scale(1);
+    right: 1rem;
+    top: 0.7rem
+  }
+
+  .child-icon {
+    transform: scale(0.5);
+  }
+
+  .arrow-icon {
+    color: #c4c0c0;
+  }
+}
